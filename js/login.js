@@ -1,5 +1,5 @@
 const submitForm = document.querySelector("#login-form")
-const nameInput = document.querySelector("#login-form input");
+const nameInput = document.querySelector("#login-form, input");
 const greetMessage = document.querySelector("#greeting")
 
 function handleNameSubmit (event) {
