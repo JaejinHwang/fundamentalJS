@@ -1,9 +1,9 @@
-const submitForm = document.querySelector("#login-form")
+const submitForm = document.querySelector("#login-form");
 const nameInput = document.querySelector("#login-form, input");
-const greetMessage = document.querySelector("#greeting")
+const greetMessage = document.querySelector("#greeting");
 
 function handleNameSubmit (event) {
-    event.preventDefault()
+    event.preventDefault();
     submitForm.classList.add("hidden");
     greetMessage.innerText = `hello, ${nameInput.value}`;
     greetMessage.classList.remove("hidden");
