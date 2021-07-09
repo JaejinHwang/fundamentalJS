@@ -1,5 +1,5 @@
 const submitForm = document.querySelector("#login-form");
-const nameInput = document.querySelector("#login-form, input");
+const nameInput = document.querySelector("#login-form input");
 const greetMessage = document.querySelector("#greeting");
 
 function handleNameSubmit (event) {
@@ -10,6 +10,7 @@ function handleNameSubmit (event) {
     localStorage.setItem("userName", nameInput.value);
 }
 
+console.log(nameInput);
 
 const savedName = localStorage.getItem("userName");
 if (savedName === null) {
